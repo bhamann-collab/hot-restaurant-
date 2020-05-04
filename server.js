@@ -73,6 +73,8 @@ app.get('/api/tables', function(req, res) {
 	return res.json(customers);
 });
 
+app.listen(3000)
+
 
 
 
@@ -85,6 +87,5 @@ class Reservation {
     }
 }
 
-let myReservation = new Reservation (1234, 'angelo', 'angelo@angelo.com', 04225748);
+let myReservation = new Reservation (1234, 'angelo', 'angelo@angelo.com', "04225748");
  
-clss Reservation extends 
