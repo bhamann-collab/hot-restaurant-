@@ -18,9 +18,9 @@
       <h3></h3>
       <hr>
       <div class="text-center">
-      <a href="index.html"><button class="btn btn-primary btn-lg flex"><span
+      <a href="index.html"><button class="btn btn-info btn-lg flex"><span
         class="fa fa-home"></span></button></a>
-        <a href="tables.html"><button class="btn btn-danger btn-lg flex"><span class="fa fa-eye"></span>View tables</button></a>
+        <a href="tables.html"><button class="btn btn-secondary btn-lg flex"><span class="fa fa-eye"></span>View tables</button></a>
     </div>
     </div>
     <div class="row">
@@ -57,7 +57,7 @@
             </form>
             <br>
             <div class="text-right">
-              <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span class="fa fa-fire"></span> Add table</button>
+              <button type="submit" class="btn btn-info btn-md" id="add-btn"><span class="fa fa-fire"></span> Add table</button>
             </div>
           </div>
         </div>
@@ -77,11 +77,12 @@
         uniqueid: $("#uniqueid").val().trim(),
       };
 
-      $.post("/api/tables/", newTable)
+      $.post("/api/tables", newTable)
         .then(function(data) {
           console.log("reservation.html", data);
           alert("Adding table...");
         });
+      
     });
   </script>
 
