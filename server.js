@@ -4,7 +4,7 @@ var path = require("path");
 
 
 var app = express();
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 3001;
 
 
 app.use(bodyParser.json());
@@ -32,10 +32,6 @@ app.get('/api/tables', function(req, res) {
 	return res.json(customers);
 });
 
-app.get('/api/waitlist', function(req, res) {
-
-	return res.json(waitlist);
-});
 
 app.get('/api/waitlist', function(req, res) {
 
